@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@2.5.17"></script>
+</head>
+<body>
+    <div id="app">
+        <p>
+            {{message}}
+        </p>
+    </div>
+</body>
+</html>
+
+<script>
+    //Vueがグローバル変数として定義されているか確認
+    console.assert(typeof Vue !== 'undefined');
+
+    //コンストラクタ（オブジェクトを生成する関数）として利用時はnew演算子を用いる
+    new Vue ({
+        //Vueで生成するオブジェクト＝Vueインスタンス
+        //以下のような代表的なオブジェクト＝オプションオブジェクト
+        el: '#app',//Vueインスタンスをマウント（適用）する要素
+        data: {//UIの状態・データ
+            message: 'P33の内容！'
+        }
+    })
+</script>
