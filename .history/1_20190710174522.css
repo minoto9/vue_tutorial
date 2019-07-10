@@ -1,0 +1,24 @@
+div {
+    height: 120px;
+    padding-bottom: 15px;
+}
+
+p {
+    margin: auto;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.tomato {
+    background-color: tomato;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.skyblue {
+    background-color: skyblue;
+}

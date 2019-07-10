@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+p {
+    line-height:120px;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.tomato {
+    background-color: tomato;
+    text-align: center;
+}
+
+.gold {
+    background-color: gold;
+    text-align: center;
+    width: 400px;
+}
+
+.skyblue {
+    background-color: skyblue;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}

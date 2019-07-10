@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(item, index) in list" v-bind:key="item.id" v-if="item.hp">{{ item.name }}  HP: {{ item.hp }}<button v-on:click="doAttack(index)">Attack</button><button v-on:click="doRemove(index)">Remove</button></li>
+        </ul>
+        <!-- <table>
+            <tr v-for="item in list" v-bind:key="item.id">
+                <td class="monsterName" v-bind:class="{warn: item.hp <= item.hp / 10}">{{ item.name }}</td>
+                <td>HP : {{ item.hp }}</td>
+                <td><button v-on:click="attack">Attack</button></td>
+            </tr>
+        </table> -->
+        追加：<br>
+        名前<input v-model="name"><br>
+        HP<input v-model="hp"><br>
+        <button v-on:click="doAdd">追加</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
